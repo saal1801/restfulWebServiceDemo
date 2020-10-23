@@ -65,14 +65,18 @@ public class CourseRegistration {
 	}
 	
 	// student in another courses
+	@SuppressWarnings("unchecked")
 	public Course intersect(Course other) {
 		
 		Course intersection = new Course();
 		 for(Student s : students) {
-			 if(((List<Student>) other).contains(s)) {
-				 ((List<Student>) intersection).add(s);
+			 if(((List<Student>) other).contains(s)) { // if(other.contains(s)) {
+				 ((List<Student>) intersection).add(s);  //  intersection.add(s);
 			 }
+			 
+				
 		 }
+		 
 		
 		return intersection;
 		
