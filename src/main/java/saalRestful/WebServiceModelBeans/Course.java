@@ -9,6 +9,7 @@ public class Course {
 	String description;
 	List<String> stepsToFinshCourse;
 	
+
 	public String getId() {
 		return id;
 	}
