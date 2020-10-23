@@ -1,9 +1,9 @@
-package restfull.WebService.demo.restfull.WebService;
+package restful.WebService.demo.restfull.WebService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = {"sti.restfull"})
+@SpringBootApplication(scanBasePackages = {"restful"})
 public class RestfulWebServiceApplication {
 
 	public static void main(String[] args) {

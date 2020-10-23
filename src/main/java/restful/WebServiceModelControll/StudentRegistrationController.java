@@ -1,4 +1,4 @@
-package restfulWebServiceModelControll;
+package restful.WebServiceModelControll;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import restfulWebServiceModelBeans.*;
+import restful.WebServiceModelBeans.StudentRegistration;
+import restful.WebServiceModelBeans.StudentRegistrationReply;
+import restful.WebServiceModelBeans.*;
 
-//import sti.restfull.WebService.Model.restfull.WebService.Model.beans.*;
 
 @RestController
 public class StudentRegistrationController {

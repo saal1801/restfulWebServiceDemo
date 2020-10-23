@@ -1,4 +1,4 @@
-package restfulWebServiceModelBeans;
+package restful.WebServiceModelBeans;
 
 public class StudentRegistrationReply {
 
