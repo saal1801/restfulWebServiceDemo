@@ -8,6 +8,24 @@ public class CourseRegistration {
 	
 	private String courseName;
 	private ArrayList<Student> students;
+	private ArrayList<Course> courses;
+	
+	private static CourseRegistration stdregd = null;
+	
+	private CourseRegistration(){
+		students = new ArrayList<Student>();
+	}
+	
+	public static CourseRegistration getInstance() {
+		
+		if(stdregd == null) {
+			stdregd = new CourseRegistration();
+			return stdregd;
+		}
+		else {
+			return stdregd;
+		}
+	}
 	
 	public CourseRegistration(String courseName) {
 		this.courseName = courseName;
@@ -65,21 +83,22 @@ public class CourseRegistration {
 	}
 	
 	// student in another courses
-	@SuppressWarnings("unchecked")
 	public Course intersect(Course other) {
 		
 		Course intersection = new Course();
 		 for(Student s : students) {
-			 if(((List<Student>) other).contains(s)) { // if(other.contains(s)) {
-				 ((List<Student>) intersection).add(s);  //  intersection.add(s);
+			 if(((List<Student>) other).contains(s)) {
+				 ((List<Student>) intersection).add(s);
 			 }
-			 
-				
 		 }
-		 
 		
 		return intersection;
 		
+	}
+	
+	
+	public ArrayList<Course> getSoursesRecords() {
+		return courses;
 	}
 }
 
