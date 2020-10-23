@@ -83,6 +83,7 @@ public class CourseRegistration {
 	}
 	
 	// student in another courses
+	@SuppressWarnings("unchecked")
 	public Course intersect(Course other) {
 		
 		Course intersection = new Course();
