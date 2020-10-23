@@ -1,4 +1,4 @@
-package restful.WebServiceModelBeans;
+package saalRestful.WebServiceModelBeans;
 
 import java.util.ArrayList;
 import java.util.List;
