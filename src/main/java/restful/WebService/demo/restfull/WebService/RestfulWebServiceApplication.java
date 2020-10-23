@@ -9,5 +9,6 @@ public class RestfulWebServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RestfulWebServiceApplication.class, args);
 	}
+	
 
 }
